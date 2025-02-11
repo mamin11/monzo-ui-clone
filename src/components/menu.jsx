@@ -4,7 +4,7 @@ import { BriefcaseIcon, UserIcon } from "@heroicons/react/24/solid"
 
 const MenutItem = ({ title, IconLeftJSX, IconRightJSX, className }) => {
     return (
-        <div className={`flex items-center gap-3 ${className}`}>
+        <div className={`flex items-center gap-3 font-light ${className}`}>
             { IconLeftJSX && <IconLeftJSX class="h-4 w-4" /> }
             <span>{title}</span>
             { IconRightJSX && <IconRightJSX class="h-4 w-4" /> }
@@ -15,7 +15,7 @@ const MenutItem = ({ title, IconLeftJSX, IconRightJSX, className }) => {
 export default function Menu() {
     return (
         <div className="flex justify-center">
-            <div className="flex gap-8 text-gray-500 bg-gray-200 my-auto p-2 rounded-full">
+            <div className="flex gap-8 text-gray-500 bg-gray-200 my-auto py-1 rounded-full">
                 <Popover>
                     <PopoverButton className="block text-lg px-4 py-1 font-semibold 50 focus:outline-none data-[active]:text-[#016B83] data-[hover]:text-[#016B83] data-[focus]:outline-1 data-[focus]:outline-white">
                         <MenutItem 
