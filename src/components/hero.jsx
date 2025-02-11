@@ -8,7 +8,7 @@ export default function HeroComponent() {
                 <Image alt="hero" src="/hero.png" width={1920} height={1080} className="rounded-2xl mb-10" />
                 <div className="absolute h-full w-full my-auto top-0 left-0 grid grid-cols-3">
                     <div className="col-span-2 flex flex-col h-full justify-center text-start space-y-8 pl-16 pt-10 align-middle">
-                        <h1 className="text-[4rem] leading-[1] font-bold tracking-normal text-white font-sans">Make your money <br /> more monzo</h1>
+                        <h1 className="text-[4rem] leading-[1] font-bold tracking-normal text-white font-sans">Make your money <br /> more wonzo</h1>
                         <p className="text-white text-2xl font-thin tracking-wide">Automate bills. Organise how you spend. Save in clever <br /> new ways. All with a free Monzo Current Account.</p>
                         <Button title="Open an account for free" className={'w-72 rounded-full'} />
                     </div>
