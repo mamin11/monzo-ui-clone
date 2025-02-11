@@ -1,3 +1,4 @@
+import Button from "./button";
 import Menu from "./menu";
 
 export default function Navigation() {
@@ -9,7 +10,7 @@ export default function Navigation() {
                     <Menu />
                 </div>
                 <div className="flex space-x-4">
-                    <button className="text-lg text-white font-semibold bg-[#016B83] pl-[1.4rem] pr-[1.4rem] py-3 rounded-lg">Sign up</button>
+                    <Button title="Sign up" className={'rounded-lg'} />
                 </div>
             </div>
         </div>
