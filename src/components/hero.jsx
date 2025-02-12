@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./button";
+import EnterAnimation from "./animation/enter-animation";
 
 const FauxImage = ({ image, className }) => {
     return (
@@ -43,36 +44,42 @@ export default function HeroComponent() {
                         <div className="row-span-2 w-full flex flex-col gap-6 pt-12 pr-20">
                             <div className="w-full flex justify-end pr-8">
                                 <div className="w-80 flex justify-end">
-                                    <FauxItem
-                                        title='Interest earned'
-                                        description='Interest for May so far'
-                                        image={<FauxImage image='/faux1.png' />}
-                                        children={<p className="text-lg pl-10 text-green-700">£9.57</p>}
-                                    />
+                                    <EnterAnimation duration={0.4}>
+                                        <FauxItem
+                                            title='Interest earned'
+                                            description='Interest for May so far'
+                                            image={<FauxImage image='/faux1.png' />}
+                                            children={<p className="text-lg pl-10 text-green-700">£9.57</p>}
+                                        />
+                                    </EnterAnimation>
                                 </div>
                             </div>
 
                             <div className="w-[22rem] flex justify-start">
-                                <FauxItem
-                                    title='Get paid one business day early 💸'
-                                    description='When paid by Bacs 🎉'
-                                    image={<FauxImage image='/faux5.png' />}
-                                />
+                                <EnterAnimation duration={0.8}>
+                                    <FauxItem
+                                        title='Get paid one business day early 💸'
+                                        description='When paid by Bacs 🎉'
+                                        image={<FauxImage image='/faux5.png' />}
+                                    />
+                                </EnterAnimation>
                             </div>
 
                             <div className="w-full flex justify-end pr-8">
                                 <div className="w-[12rem]">
-                                    <FauxItem
-                                        title='Cashback offers'
-                                        description='On top brands'
-                                        image={
-                                            <div className="flex items-center -space-x-4">
-                                                <FauxImage image='/faux2.png' className='z-30' />
-                                                <FauxImage image='/faux3.png' className='z-20' />
-                                                <FauxImage image='/faux4.png' className='z-10' />
-                                            </div>
-                                        }
-                                    />
+                                    <EnterAnimation duration={0.9}>
+                                        <FauxItem
+                                            title='Cashback offers'
+                                            description='On top brands'
+                                            image={
+                                                <div className="flex items-center -space-x-4">
+                                                    <FauxImage image='/faux2.png' className='z-30' />
+                                                    <FauxImage image='/faux3.png' className='z-20' />
+                                                    <FauxImage image='/faux4.png' className='z-10' />
+                                                </div>
+                                            }
+                                        />
+                                    </EnterAnimation>
                                 </div>
                             </div>
                         </div>
