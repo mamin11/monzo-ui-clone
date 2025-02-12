@@ -5,9 +5,9 @@ import { BriefcaseIcon, UserIcon } from "@heroicons/react/24/solid"
 const MenutItem = ({ title, IconLeftJSX, IconRightJSX, className }) => {
     return (
         <div className={`flex items-center gap-3 font-light ${className}`}>
-            { IconLeftJSX && <IconLeftJSX class="h-4 w-4" /> }
+            { IconLeftJSX && <IconLeftJSX className="h-4 w-4" /> }
             <span>{title}</span>
-            { IconRightJSX && <IconRightJSX class="h-4 w-4" /> }
+            { IconRightJSX && <IconRightJSX className="h-4 w-4" /> }
         </div>
     )
 }
