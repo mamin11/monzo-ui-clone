@@ -28,22 +28,21 @@ const FauxItem = ({ image, title, description, children }) => {
 
 export default function HeroComponent() {
     return (
-        <div className="w-full mt-1 xl:pl-[14.5rem] xl:pr-[15.5rem] 2xl:px-28">
-            <div className="relative max-w-[90rem] max-h-[700px] mx-auto rounded-2xl">
-                <Image alt="hero" src="/hero.png" width={1920} height={1080} className="rounded-2xl" />
-                <div className="absolute h-full w-full my-auto top-0 left-0 grid grid-cols-3">
-                    <div className="h-full col-span-2 my-auto top-0 left-0">
-                        <div className="col-span-2 flex flex-col h-full justify-center text-start space-y-8 pl-16 pt-10 align-middle">
-                            <h1 className="text-[4rem] leading-[1] font-bold tracking-normal text-white font-sans">Make your money <br /> more wonzo</h1>
-                            <p className="text-white text-2xl font-thin tracking-wide">Automate bills. Organise how you spend. Save in clever <br /> new ways. All with a free Monzo Current Account.</p>
-                            <Button title="Open an account for free" className={'w-72 rounded-full'} />
+        <div className="w-full h-full mt-1 px-[1.25rem]">
+            <div className="hero-section w-full max-w-[90rem] mx-auto rounded-2xl" >
+                <div className=" h-full w-full my-auto  grid grid-cols-3">
+                    <div className="h-full col-span-3 md:col-span-2 my-auto top-0 left-0">
+                        <div className="col-span-2 flex flex-col h-full justify-center text-start space-y-8 pl-4 sm:pl-16 pt-10 align-middle">
+                            <h1 className="text-[2rem] md:text-[3rem] xl:text-[4rem] leading-[1] font-bold tracking-normal text-white font-sans">Make your money <br /> more wonzo</h1>
+                            <p className="text-white text-sm md:text-md lg:text-xl xl:text-2xl font-thin tracking-wide">Automate bills. Organise how you spend. Save in clever <br /> new ways. All with a free Monzo Current Account.</p>
+                            <Button title="Open an account for free" className={'w-72 rounded-full text-sm md:text-lg'} />
                         </div>
                     </div>
 
-                    <div className="grid grid-rows-3 w-full h-full gap-4">
-                        <div className="row-span-2 w-full flex flex-col gap-6 pt-12 pr-20">
+                    <div className="grid col-span-3 md:col-span-1 lg:grid-rows-3 w-full h-full gap-4">
+                        <div className="row-span-3 lg:row-span-2 w-full flex flex-col gap-6 pt-12 pr-8 xl:pr-20">
                             <div className="w-full flex justify-end pr-8">
-                                <div className="w-80 flex justify-end">
+                                <div className="lg:w-80 flex justify-end">
                                     <EnterAnimation duration={0.4}>
                                         <FauxItem
                                             title='Interest earned'
@@ -55,7 +54,7 @@ export default function HeroComponent() {
                                 </div>
                             </div>
 
-                            <div className="w-[22rem] flex justify-start">
+                            <div className="lg:w-[22rem] flex justify-start">
                                 <EnterAnimation duration={0.8}>
                                     <FauxItem
                                         title='Get paid one business day early 💸'
@@ -94,7 +93,7 @@ export default function HeroComponent() {
                 </div>
             </div>
 
-            <div className="w-full flex justify-end mt-3 mb-4 xl:pl-[14.5rem] xl:pr-[15.5rem] 2xl:px-28">
+            <div className="w-full mx-auto max-w-[90rem] flex justify-end mt-3 mb-4 ">
                 <p className="text-xs font-[600] font-sans tracking-wide">UK residents. Ts&Cs apply.</p>
             </div>
         </div>
