@@ -28,7 +28,7 @@ const FauxItem = ({ image, title, description, children }) => {
 
 export default function HeroComponent() {
     return (
-        <div className="w-full h-full mt-1 px-[1.25rem]">
+        <div className="w-full mt-1 px-[1.25rem]">
             <div className="hero-section w-full max-w-[90rem] mx-auto rounded-2xl" >
                 <div className=" h-full w-full my-auto  grid grid-cols-3">
                     <div className="h-full col-span-3 md:col-span-2 my-auto top-0 left-0">
